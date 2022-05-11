@@ -1,4 +1,4 @@
-# Project Name : Emotion-recognition
+# G.A.M.E.R.
 # Table of Content :
 1.[Description](#p1)
 
@@ -9,30 +9,21 @@
 4.[Dataset](#p4)
 
 
-
-![](https://github.com/omar178/Emotion-recognition/blob/master/emotions/Happy.PNG)
-![](https://github.com/omar178/Emotion-recognition/blob/master/emotions/angry.PNG)
-
-
-
-
 <a id="p1"></a> 
 # Description:
 
-Our Human face is having a mixed emotions so we are to demonstrate the probabilities of these emotions that we have.
-
-## What does Emotion Recognition mean?
-
-Emotion recognition is a technique used in software that allows a program to "read" the emotions on a human face using advanced image processing. Companies have been experimenting with combining sophisticated algorithms with image processing techniques that have emerged in the past ten years to understand more about what an image or a video of a person's face tells us about how he/she is feeling and not just that but also showing the probabilities of mixed emotions a face could has.
+G.A.M.E.R. is a system that uses emotion recognition to change the state of a game based on how the player is feeling. G.A.M.E.R. uses the player’s emotion to create a more personalized gaming experience that aims to make thee game more enjoyable. The system takes image data from a live camera feed and determines the player’s emotional state using an emotion recognition model that is pretrained on the FER-2013 dataset. 
 
 <a id="p2"></a> 
 # Installations:
 
-Install dependencies using requirements.txt
+This repository contains files from the Emotion-recognition repository, which can be found [here](https://github.com/omar178/Emotion-recognition). Following the instructions on that page should allow you to run the necessary files for this project. Particularly, installing the dependencies using requirements.txt should be enough.
 
 ```shell
 pip install -r requirements.txt
 ```
+
+The Unity game for this project was made using Unity version 2020.3.32f. Having this Unity editor version is required, and downloading Unity Hub [here](https://unity3d.com/get-unity/download) will allow you to open the project. 
 
 <a id="p3"></a> 
 # Usage:
