@@ -1,5 +1,5 @@
 # G.A.M.E.R.
-# Table of Content :
+# Table of Contents :
 1.[Description](#p1)
 
 2.[Installations](#p2)
@@ -28,18 +28,25 @@ The Unity game for this project was made using Unity version 2020.3.32f. Having 
 <a id="p3"></a> 
 # Usage:
 
-The program will creat a window to display the scene capture by webcamera and a window representing the probabilities of detected emotions.
+There are two versions of the project in this repository. Version 1 is the version from the Prototype studio, while Version 3 is the final version that was submitted and showcaseed at the Final Studio. The following are instructions for how this project was run on macOS Monterey 12.2.1 and Python version 3.10.2.
 
-> Demo
+## Version 1
 
+This is the first version of this project, which uses pygame. In order to run this version, you will need to install pygame.
+
+```shell
+pip install pygame
+```
+
+This program will display two windows. The first will show the live web camera feed with a bounding box for the face and a label for the current emotion being detected. The second contains a simple game where the player controls a spaceship shooting asteroids. This simply changes the background of the game whenever the "happy" emotion is detected. The following command will run the program
+
+```shell
 python real_time_video.py
+```
 
-You can just use this with the provided pretrained model i have included in the path written in the code file, i have choosen this specificaly since it scores the best accuracy, feel free to choose any but in this case you have to run the later file train_emotion_classifier
-> If you just want to run this demo, the following content can be skipped
-- Train
+## Version 3
 
-- python train_emotion_classifier.py
-
+This is the final version of the project, which uses both Python and Unity. You will need to open the 'Unity Emotion Game' project from this repo in Unity (through Unity Hub). Once the Unity project is open, use the 'Project' tab in the Unity editor to open the 'Scenes' folder. Open the 'JammoScene' scene if it is not already open. 
 
 <a id="p4"></a> 
 # Dataset:
