@@ -48,24 +48,32 @@ python real_time_video.py
 
 This is the final version of the project, which uses both Python and Unity. You will need to open the 'Unity Emotion Game' project from this repo in Unity (through Unity Hub). Once the Unity project is open, use the 'Project' tab in the Unity editor to open the 'Scenes' folder. Open the 'JammoScene' scene if it is not already open. 
 
+Once you have the correct scene open, you will need to run the game and the emotion recogntition module at the same time. First, start the emotions_to_unity.py script by running the following coommand:
+
+```shell
+python emotions_to_unity.py
+```
+
+This will run the emotion recognition module in the background, which uses the web camera to record the user. No windows will be displayed when running this script. With this script running, you can go back to the Unity editor and press the play button at the top. This will start the game, and should automatically connect to and received emotion predictions from the Python script. With both the Python script and Unity game running, you should be able to play the game with the emotion-based effects.
+
+Controls for the Unity game use only the arrow (or WASD) keys for movement. This should be enough to play as Jammo!
+
 <a id="p4"></a> 
 # Dataset:
 
-I have used [this](https://www.kaggle.com/c/3364/download-all) dataset
+The pre-trained model uses [this](https://www.kaggle.com/c/3364/download-all) dataset
 
-Download it and put the csv in fer2013/fer2013/
+If you want to download the data for training and testing, put it in the fer2013/fer2013/ folder
 
--fer2013 emotion classification test accuracy: 66%
+FER-2013 emotion classification test accuracy: 66%
 
 
 # Credits
-This work is inspired from [this](https://github.com/oarriaga/face_classification) great work and the resources of Adrian Rosebrock helped me alot!.
 
-# Ongoing 
-Draw emotions faces next to the detected face.
+This project uses a pre-trained model as well as some of the basic infrastructure from the [Emotion-recognition](https://github.com/omar178/Emotion-recognition) project. This project was crucial in getting a good model for emotion recognition, and for figuring out how to use the web camera image data.
 
-# Issues & Suggestions
+# Issues
 
-If any issues and suggestions to me, you can create an [issue](https://github.com/omar178/Emotion-recognition/issues).
+If any issues or bugs arise with running the code, reach me at evilla@mit.edu
 
-If you like this work please help me by giving me some stars.
+Enjoy!
